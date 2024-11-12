@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "sd_demo"
+version = "0.1.0"
+description = "learning stable diffusion"
+authors = ["Doge"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+diffusers = "^0.31.0"
+transformers = "^4.46.1"
+torch = "^2.5.1"
+torchvision = "^0.20.1"
+torchaudio = "^2.5.1"
+accelerate = "^1.1.0"
+protobuf = "^5.28.3"
+sentencepiece = "^0.2.0"
+jupyter = "^1.1.1"
+
+[tool.poetry.scripts]
+main="sd_demo.main:main"
+
+[[tool.poetry.source]]
+name = "mirrors"
+url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple/"
+priority = "primary"
+
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
